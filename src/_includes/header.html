@@ -16,11 +16,9 @@
   }
 
   .lwj-demo-header .logo-wrapper::after {
-    background-image: linear-gradient(
-      255deg,
-      var(--black) 0%,
-      var(--black-transparent) 30%
-    );
+    background-image: linear-gradient(255deg,
+        var(--black) 0%,
+        var(--black-transparent) 30%);
     bottom: 0;
     content: '';
     display: block;
@@ -41,7 +39,7 @@
     z-index: 15;
   }
 
-  .lwj-demo-header .logo::after {
+  /* .lwj-demo-header .logo::after {
     background: var(--white);
     border: 1px solid var(--dark-gray);
     border-radius: 0.25rem;
@@ -56,7 +54,7 @@
     top: 98%;
     transition: opacity 300ms linear;
     width: 230px;
-  }
+  } */
 
   .lwj-demo-header .logo:active,
   .lwj-demo-header .logo:focus,
@@ -127,11 +125,10 @@
 <header class="lwj-demo-header">
   <div class="logo-wrapper">
     <canvas id="canvas" width="300" height="56"></canvas>
-    <a href="https://www.learnwithjason.dev" class="logo"
-      ><img src="/images/learn-with-jason-dark.svg" alt="Learn With Jason"
-    /></a>
+    <a href="https://huxley-and-kent.myshopify.com/" class="logo"><img src="/images/hk-logo.png"
+        alt="Learn With Jason" /></a>
     <a href="/" rel="home" class="home-link">
-      {{ meta.title }}
+      Huxley and Kent Customer Billing Portal
     </a>
   </div>
 
