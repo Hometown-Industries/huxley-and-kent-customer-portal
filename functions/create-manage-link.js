@@ -24,7 +24,7 @@ exports.handler = async (_event, context) => {
     return_url: process.env.URL,
   });
 
-  _event.redirect(session.url);
+  _event.redirect(link.url);
 
   // return {
   //   statusCode: 200,
