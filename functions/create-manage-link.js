@@ -24,13 +24,10 @@ exports.handler = async (_event, context) => {
     return_url: process.env.URL,
   });
 
-  // const session = await stripe.billingPortal.sessions.create({
-  //   customer: '{{ CUSTOMER_ID }}',
-  //   return_url: 'https://example.com/account',
-  // });
+  _event.redirect(session.url);
 
-  return {
-    statusCode: 200,
-    body: JSON.stringify(link.return_url),
-  };
+  // return {
+  //   statusCode: 200,
+  //   body: JSON.stringify(link.url),
+  // };
 };
