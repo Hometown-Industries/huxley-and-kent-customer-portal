@@ -24,8 +24,13 @@ exports.handler = async (_event, context) => {
     return_url: process.env.URL,
   });
 
+  // const session = await stripe.billingPortal.sessions.create({
+  //   customer: '{{ CUSTOMER_ID }}',
+  //   return_url: 'https://example.com/account',
+  // });
+
   return {
     statusCode: 200,
-    body: JSON.stringify(link.url),
+    body: JSON.stringify(link.return_url),
   };
 };
